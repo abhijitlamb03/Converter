@@ -2,8 +2,7 @@ count = 0;
 $('#reverse').click(function(event) {
   cm_contHTML = $('.cm_cont').html();
   in_contHTML = $('.in_cont').html();
-  //alert(cm_contHTML);
- // alert(varin_contHTML);
+  
   $('.cm_cont').html(in_contHTML);
   $('.in_cont').html(cm_contHTML);
   if(count == 0){
@@ -16,7 +15,7 @@ $('#reverse').click(function(event) {
 });
 
 function cmin(){
-    //alert()
+    
   var centimeters_inches =  $("#centimeters_inches").val()
   $("#inches_centimeters").val(centimeters_inches/2.54)
 }
